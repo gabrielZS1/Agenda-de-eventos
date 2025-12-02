@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="#ECEFF1"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agenda de Eventos"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#FFA500"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitulo"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:radius="14dp">
+
+
+        <ImageView
+            android:id="@+id/bola1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/orange22"
+
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/tvData1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25 Jul"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_alignStart="@id/bola1"
+            android:layout_alignEnd="@id/bola1"
+            android:layout_alignTop="@id/bola1"
+            android:layout_alignBottom="@id/bola1"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvMeetupTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Meetup de Tecnologia"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#212121"
+            android:layout_toEndOf="@id/bola1" />
+
+        <TextView
+            android:id="@+id/tvMeetupDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palestras sobre novas tecnologias"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:layout_below="@id/tvMeetupTitulo"
+            android:layout_toEndOf="@id/bola1"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card1"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:radius="14dp">
+
+        <ImageView
+            android:id="@+id/bola2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/orange22"
+
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/tvData2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03 May"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_alignStart="@id/bola2"
+            android:layout_alignEnd="@id/bola2"
+            android:layout_alignTop="@id/bola2"
+            android:layout_alignBottom="@id/bola2"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvFeiraTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Feira de Negócios"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#212121"
+            android:layout_toEndOf="@id/bola2" />
+
+        <TextView
+            android:id="@+id/tvFeiraDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exposição de produtos e serviços"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:layout_below="@id/tvFeiraTitulo"
+            android:layout_toEndOf="@id/bola2"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card2"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:radius="14dp">
+
+        <ImageView
+            android:id="@+id/bola3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/orange22"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp" />
+
+        <TextView
+            android:id="@+id/tvData3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 Aug"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_alignStart="@id/bola3"
+            android:layout_alignEnd="@id/bola3"
+            android:layout_alignTop="@id/bola3"
+            android:layout_alignBottom="@id/bola3"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvConferenciaTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conferência de Design"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textColor="#212121"
+            android:layout_toEndOf="@id/bola3" />
+
+        <TextView
+            android:id="@+id/tvConferenciaDescricao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workshops e palestras inspiradoras"
+            android:textSize="18sp"
+            android:textColor="#555555"
+            android:layout_below="@id/tvConferenciaTitulo"
+            android:layout_toEndOf="@id/bola3"
+            android:layout_marginTop="6dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
